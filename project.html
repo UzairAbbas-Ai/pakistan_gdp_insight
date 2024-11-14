@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pakistan GDP Shares Visualization</title>
+    <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Pakistan GDP Shares by Sector </h1>
+    <div id="controls">
+        <label for="year">Select Year:</label>
+        <select id="year" onchange="updateVisualization()">
+            <option value="Visualize" >Visualize</option>
+            <option value="2018-19">2018-19</option>
+            <option value="2019-20">2019-20</option>
+            <option value="2020-21">2020-21</option>
+            <option value="2021-22">2021-22</option>
+            <option value="2022-23">2022-23</option>
+            <option value="2023-24" selected>2023-24</option>
+
+
+        </select>
+    </div>
+    <div id="plot"></div>
+    <script src="script.js"></script>
+</body>
+</html>
